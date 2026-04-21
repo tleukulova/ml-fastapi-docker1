@@ -1,8 +1,22 @@
 # Titanic ML System - FastAPI + MLflow + Streamlit + Docker
 
-A complete MLOps project: train a model, track it with MLflow, serve it
-via FastAPI, interact via Streamlit, and containerize everything with Docker.
+This project demonstrates an end-to-end machine learning workflow for predicting passenger survival on the Titanic dataset. 
 
+The system includes model training, experiment tracking, API-based model serving, and a simple web interface for interaction. The project also demonstrates basic MLOps practices such as model version tracking and containerized deployment.
+
+---
+## Project Overview
+
+The goal of this project is to develop a machine learning system capable of predicting whether a passenger survived the Titanic disaster based on demographic and travel-related features.
+
+The system demonstrates the following components of a typical ML pipeline:
+
+- data acquisition and preprocessing
+- model training and evaluation
+- experiment tracking with MLflow
+- deployment of the trained model using FastAPI
+- user interaction through a Streamlit interface
+- containerized execution using Docker
 ---
 
 ##  Project Structure
@@ -19,11 +33,16 @@ ml-fastapi-docker/
 ```
 
 ---
+## Technologies Used
 
-## Prerequisites
+The following technologies were used in the development of this project:
 
-- Python 3.11+
-- Docker Desktop (for containerization steps)
+- Python 3.11
+- scikit-learn - machine learning algorithms
+- MLflow - experiment tracking and model registry
+- FastAPI - REST API for model inference
+- Streamlit - interactive user interface
+- Docker - containerization and reproducible deployment
 
 ---
 

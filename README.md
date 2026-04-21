@@ -1,4 +1,4 @@
-# 🚢 Titanic ML System — FastAPI + MLflow + Streamlit + Docker
+# Titanic ML System - FastAPI + MLflow + Streamlit + Docker
 
 A complete MLOps project: train a model, track it with MLflow, serve it
 via FastAPI, interact via Streamlit, and containerize everything with Docker.
@@ -20,16 +20,16 @@ ml-fastapi-docker/
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 - Python 3.11+
 - Docker Desktop (for containerization steps)
 
 ---
 
-## 🚀 Step-by-Step Setup
+## Step-by-Step Setup
 
-### Step 1 — Install dependencies
+### Step 1 - Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ---
 
-### Step 2 — Start the MLflow Tracking Server
+### Step 2 - Start the MLflow Tracking Server
 
 Open a **dedicated terminal** and run:
 
@@ -46,11 +46,11 @@ mlflow server --host 127.0.0.1 --port 5000
 ```
 
 Keep this terminal open. The MLflow UI will be available at:
-👉 http://127.0.0.1:5000
+ http://127.0.0.1:5000
 
 ---
 
-### Step 3 — Train the model
+### Step 3 - Train the model
 
 In a **new terminal**, run:
 
@@ -67,7 +67,7 @@ This will:
 
 ---
 
-### Step 4 — Run the FastAPI server locally
+### Step 4 - Run the FastAPI server locally
 
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 1912 --reload
@@ -82,7 +82,7 @@ Test endpoints:
 
 ---
 
-### Step 5 — Run the Streamlit frontend
+### Step 5 - Run the Streamlit frontend
 
 ```bash
 streamlit run app.py
@@ -92,7 +92,7 @@ streamlit run app.py
 
 ---
 
-### Step 6 — Build the Docker image
+### Step 6 - Build the Docker image
 
 ```bash
 docker build -t titanic-ml-api .
@@ -100,7 +100,7 @@ docker build -t titanic-ml-api .
 
 ---
 
-### Step 7 — Run the Docker container
+### Step 7 - Run the Docker container
 
 ```bash
 docker run -d -p 1912:1912 --name titanic-api titanic-ml-api
@@ -119,7 +119,7 @@ curl -X POST http://localhost:1912/predict \
 
 ---
 
-## 🧪 Example /predict Payload
+##  Example /predict Payload
 
 ```json
 {
@@ -142,7 +142,7 @@ curl -X POST http://localhost:1912/predict \
 
 ---
 
-## 📊 MLflow Tracking
+##  MLflow Tracking
 
 - Experiment: `Titanic_Survival_Prediction`
 - Logged: `n_estimators`, `max_depth`, `min_samples_split`, `accuracy`, `f1_score`
@@ -151,7 +151,7 @@ curl -X POST http://localhost:1912/predict \
 
 ---
 
-## 🛑 Stop & Clean Up
+##  Stop & Clean Up
 
 ```bash
 # Stop the container

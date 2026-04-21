@@ -5,7 +5,7 @@ via FastAPI, interact via Streamlit, and containerize everything with Docker.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ml-fastapi-docker/
